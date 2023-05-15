@@ -38,14 +38,8 @@ def text(message):
   elif message.text == "❓ Random":
     random_message(message, bot)
   else:
-    # userSpamId = 1456865918 # стас
-    # bot.send_message(userSpamId, f'{message.text}')
     if message.chat.username != "XxGrandxX":
       myId = 1792123982
       bot.send_message(myId, f'@{message.chat.username} отправил -  {message.text}')
-
-# 1456865918 стас
-# 1421063125 алексей
-# 5321681089 ура
 
 bot.polling(none_stop = True, interval=0)
