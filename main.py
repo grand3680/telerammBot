@@ -35,11 +35,7 @@ def callback_inline(call):
 def text(message):
   if message.text == "👋 about":
     about_message(message, bot)
-  elif message.text == "❓ Random":
+  if message.text == "❓ Random":
     random_message(message, bot)
-  else:
-    if message.chat.username != "XxGrandxX":
-      myId = 1792123982
-      bot.send_message(myId, f'@{message.chat.username} send -  {message.text}')
 
 bot.polling(none_stop = True, interval=0)
