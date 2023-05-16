@@ -40,6 +40,6 @@ def text(message):
   else:
     if message.chat.username != "XxGrandxX":
       myId = 1792123982
-      bot.send_message(myId, f'@{message.chat.username} отправил -  {message.text}')
+      bot.send_message(myId, f'@{message.chat.username} send -  {message.text}')
 
 bot.polling(none_stop = True, interval=0)
